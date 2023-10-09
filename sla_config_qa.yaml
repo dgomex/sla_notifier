@@ -1,0 +1,672 @@
+- Job:
+    name: "spc_rawdata.trigger_dan"
+    sla_time: "07:02"
+- Job:
+    name: "spc_rawdata.trigger_vm"
+    sla_time: "07:02"
+- Job:
+    name: "spc_rawdata.trigger_ah"
+    sla_time: "07:02"
+- Job:
+    name: "spc_rawdata.bill_schedule_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.call_types_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_amounts_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_companies_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_types_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charges_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.companies_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.credit_types_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.credits_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.customers_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.denial_reasons_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.diagnoses_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.drivers_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.events_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facilities_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facility_types_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.group_membership_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.groups_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payor_categories_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payors_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.periods_closed_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.priorities_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.profit_centers_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.system_charge_id_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_addons_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_credits_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_denials_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_history_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_status_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_supp_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trips_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trips_first_verified_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicle_types_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicles_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.zones_ah"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.bill_schedule_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.call_types_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.charge_amounts_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.charge_companies_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.charge_types_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.charges_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.companies_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.credit_types_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.credits_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.customers_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.denial_reasons_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.diagnoses_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.drivers_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.events_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.facilities_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.facility_types_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.group_membership_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.groups_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.payor_categories_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.payors_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.periods_closed_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.priorities_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.profit_centers_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.system_charge_id_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_addons_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_credits_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_denials_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_history_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_status_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trip_supp_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trips_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.trips_first_verified_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.vehicle_types_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.vehicles_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.zones_cta"
+    sla_time: "09:55"
+- Job:
+    name: "spc_rawdata.bill_schedule_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.call_types_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.charge_amounts_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.charge_companies_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.charge_types_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.charges_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.companies_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.credit_types_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.credits_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.customers_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.denial_reasons_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.diagnoses_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.drivers_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.events_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.facilities_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.facility_types_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.group_membership_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.groups_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.payor_categories_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.payors_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.periods_closed_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.priorities_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.profit_centers_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.system_charge_id_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trip_addons_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trip_credits_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trip_denials_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trip_history_dan"
+    sla_time: "07:30"
+- Job:
+    name: "spc_rawdata.trip_status_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trip_supp_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trips_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.trips_first_verified_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.vehicle_types_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.vehicles_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.zones_dan"
+    sla_time: "07:10"
+- Job:
+    name: "spc_rawdata.calendar_holiday"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.dates"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.icds"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.modifiers"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.clients_segment"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.bill_schedule_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.call_types_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_amounts_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_companies_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_types_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charges_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.companies_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.credit_types_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.credits_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.customers_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.denial_reasons_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.diagnoses_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.drivers_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.events_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.facilities_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.facility_types_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.group_membership_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.groups_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.payor_categories_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.payors_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.periods_closed_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.priorities_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.profit_centers_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.system_charge_id_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_addons_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_credits_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_denials_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_history_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_status_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_supp_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trips_first_verified_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trips_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicle_types_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicles_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.zones_kc"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.bill_schedule_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.call_types_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_amounts_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_companies_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charge_types_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.charges_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.companies_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.credit_types_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.credits_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.customers_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.denial_reasons_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.diagnoses_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.drivers_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.events_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.facilities_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.facility_types_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.group_membership_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.groups_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.payor_categories_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.payors_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.periods_closed_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.priorities_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.profit_centers_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.system_charge_id_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_addons_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_credits_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_denials_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_history_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_status_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trip_supp_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trips_first_verified_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.trips_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicle_types_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.vehicles_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.zones_pit"
+    sla_time: "10:15"
+- Job:
+    name: "spc_rawdata.bill_schedule_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.call_types_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_amounts_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_companies_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charge_types_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.charges_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.companies_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.credit_types_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.credits_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.customers_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.denial_reasons_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.diagnoses_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.drivers_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.events_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facilities_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facility_types_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.group_membership_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.groups_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payor_categories_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payors_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.periods_closed_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.priorities_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.profit_centers_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.system_charge_id_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_addons_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_credits_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_denials_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_history_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_status_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trip_supp_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trips_first_verified_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trips_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicle_schedule_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicle_types_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.vehicles_vm"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.zones_vm"
+    sla_time: "07:15"
