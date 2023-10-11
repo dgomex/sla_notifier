@@ -850,3 +850,225 @@
 - Job:
     name: "spc_rawdata.ah"
     sla_time: "06:15"
+- Job:
+    name: "rds_curated_data.stg_business_day"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.stg_map_closing_calendar_raw"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.stg_map_closing_calendar"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_company_and_payor_level_one"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_company_and_payor_level_two"
+    sla_time: "08:50"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_payor_level_one"
+    sla_time: "08:50"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_payor_level_two"
+    sla_time: "08:50"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_primary_payor"
+    sla_time: "08:50"
+- Job:
+    name: "rds_curated_data.stg_pre_payments_ac"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.stg_trip_credit_ac"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.stg_trip_credit_rn"
+    sla_time: "08:00"
+- Job:
+    name: "rds_curated_data.stg_trip_credit_final"
+    sla_time: "08:30"
+- Job:
+    name: "rds_curated_data.stg_mileage_charge"
+    sla_time: "07:55"
+- Job:
+    name: "rds_curated_data.stg_base_rate_charge"
+    sla_time: "07:55"
+- Job:
+    name: "rds_curated_data.stg_trip_credit"
+    sla_time: "08:05"
+- Job:
+    name: "rds_curated_data.stg_est_reimb_by_company_and_primary_payor"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.stg_company_profit_center"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.map_closing_calendar"
+    sla_time: "07:55"
+- Job:
+    name: "rds_curated_data.dim_accident_type"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.dim_aging_bucket"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_call_type"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_payor"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_priority"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_source_system"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_vehicle"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_calendar_holiday"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_billing_schedule"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_trip_stage"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_charge"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_patient"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_estimated_reimbursement"
+    sla_time: "08:55"
+- Job:
+    name: "rds_curated_data.dim_ytd"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_denial_reason"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_date"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_modifier"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_diagnosis"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_credit"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_company_demo"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.dim_remark"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.dim_trip"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.log_etl_build"
+    sla_time: "09:30"
+- Job:
+    name: "rds_curated_data.dim_company_profit_center"
+    sla_time: "07:50"
+- Job:
+    name: "rds_curated_data.log_etl_build_history"
+    sla_time: "11:00"
+- Job:
+    name: "rds_curated_data.fact_profit_center_reporting"
+    sla_time: "07:45"
+- Job:
+    name: "rds_curated_data.fact_trip_charge"
+    sla_time: "08:30"
+- Job:
+    name: "rds_curated_data.fact_trip_denial"
+    sla_time: "08:00"
+- Job:
+    name: "rds_curated_data.fact_trip"
+    sla_time: "08:20"
+- Job:
+    name: "rds_curated_data.fact_trip_credit"
+    sla_time: "08:45"
+- Job:
+    name: "rds_aggregated_data.agg_trip_charge"
+    sla_time: "09:15"
+- Job:
+    name: "rds_aggregated_data.agg_trip_rpaag"
+    sla_time: "09:05"
+- Job:
+    name: "rds_aggregated_data.agg_trip_cpaag"
+    sla_time: "09:20"
+- Job:
+    name: "rds_aggregated_data.agg_trip"
+    sla_time: "09:20"
+- Job:
+    name: "rds_aggregated_data.agg_trip_denial"
+    sla_time: "09:00"
+- Job:
+    name: "rds_aggregated_data.agg_trip_credit"
+    sla_time: "09:30"
+- Job:
+    name: "rds_curated_data.fact_trip_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.fact_trip_denial_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_trip_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.fact_trip_credit_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_payor_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_priority_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_vehicle_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.fact_trip_charge_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_billing_schedule_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_call_type_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_charge_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_company_profit_center_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_credit_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_denial_reason_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.dim_patient_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_snapshot_data.snap_ar_days_monthly"
+    sla_time: "08:55"
+- Job:
+    name: "rds_curated_data.finish_curated"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.finish_curated_demo"
+    sla_time: "08:45"
+- Job:
+    name: "rds_curated_data.finish_curated_dim_demo"
+    sla_time: "08:45"
+- Job:
+    name: "spc_rawdata.files"
+    sla_time: "07:15"
