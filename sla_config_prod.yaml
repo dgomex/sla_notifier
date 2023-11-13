@@ -345,7 +345,7 @@
     sla_time: "05:15"
 - Job:
     name: "spc_rawdata.trip_addons_dan"
-    sla_time: "05:15"it
+    sla_time: "05:15"
 - Job:
     name: "spc_rawdata.trip_credits_dan"
     sla_time: "06:25"
