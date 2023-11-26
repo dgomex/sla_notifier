@@ -737,9 +737,6 @@
     name: "spc_rawdata.cta"
     sla_time: "07:40"
 - Job:
-    name: "spc_rawdata.demo"
-    sla_time: "05:25"
-- Job:
     name: "spc_rawdata.ah"
     sla_time: "06:15"
 - Job:
