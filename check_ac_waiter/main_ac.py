@@ -21,10 +21,8 @@ def main():
                 print("AC available, calling my master to make something about it")
                 notifier = Notifier()
                 notifier.call()
-                sleep(60 * 5)
             else:
                 print("AC not available yet, waiting a little bit more")
-                sleep(60 * 10)
         except Exception:
             print("The python code is broken, calling to check")
             notifier = Notifier()
