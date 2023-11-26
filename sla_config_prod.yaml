@@ -354,7 +354,7 @@
     sla_time: "05:15"
 - Job:
     name: "spc_rawdata.trip_history_dan"
-    sla_time: "07:00"
+    sla_time: "05:40"
 - Job:
     name: "spc_rawdata.trip_status_dan"
     sla_time: "05:15"
@@ -723,7 +723,7 @@
     sla_time: "06:25"
 - Job:
     name: "spc_rawdata.dan"
-    sla_time: "07:10"
+    sla_time: "05:50"
 - Job:
     name: "spc_rawdata.pit"
     sla_time: "07:40"
