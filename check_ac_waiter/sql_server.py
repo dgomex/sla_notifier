@@ -1,4 +1,4 @@
-#import pymssql
+import pymssql
 
 
 class SQLServerDatabase:
@@ -10,23 +10,10 @@ class SQLServerDatabase:
 
     def execute_query(self, query):
         try:
-            # Establish a connection to the SQL Server database
-            #connection = pymssql.connect(self.server, self.username, self.password, self.database)
-
-            # Create a cursor to execute SQL queries
-            cursor = connection.cursor()
-
-            # Execute the SQL query
-            cursor.execute(query)
-
-            # Fetch all results
-            result = cursor.fetchall()
-
-            # Close the cursor and the connection
-            cursor.close()
-            connection.close()
-
-            return result
+            with pymssql.connect(self.server, self.username, self.password, self.database) as conn:
+                with conn.cursor(as_dict=True) as cursor:
+                    cursor.execute(query)
+            return cursor
 
         except Exception as e:
             print(f"Error executing SQL query: {str(e)}")
