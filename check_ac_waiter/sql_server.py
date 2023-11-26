@@ -13,7 +13,7 @@ class SQLServerDatabase:
             with pymssql.connect(self.server, self.username, self.password, self.database) as conn:
                 with conn.cursor(as_dict=True) as cursor:
                     cursor.execute(query)
-            return cursor
+                    return cursor.fetchone()
 
         except Exception as e:
             print(f"Error executing SQL query: {str(e)}")

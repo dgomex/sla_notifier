@@ -17,7 +17,7 @@ def main():
             print("STARTING QUERY EXECUTION")
             query_result = sql_server.execute_query(query=query)
             print("QUERY COMPLETED")
-            if query_result.fetchone()["cnt"] == 1:
+            if query_result["cnt"] == 1:
                 print("AC available, calling my master to make something about it")
                 notifier = Notifier()
                 notifier.call()
