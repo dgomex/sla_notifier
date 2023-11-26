@@ -1,4 +1,4 @@
-import pyodbc
+#import pymssql
 
 
 class SQLServerDatabase:
@@ -11,8 +11,7 @@ class SQLServerDatabase:
     def execute_query(self, query):
         try:
             # Establish a connection to the SQL Server database
-            connection_string = f"DRIVER={{SQL Server}};SERVER={self.server};DATABASE={self.database};UID={self.username};PWD={self.password}"
-            connection = pyodbc.connect(connection_string)
+            #connection = pymssql.connect(self.server, self.username, self.password, self.database)
 
             # Create a cursor to execute SQL queries
             cursor = connection.cursor()
