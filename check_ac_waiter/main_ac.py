@@ -12,12 +12,12 @@ def main():
                                            username=os.getenv("AC_USER"),
                                            password=os.getenv("AC_PASSWORD"),
                                            database=os.getenv("AC_DB"))
-            query = "SELECT COUNT(1) FROM dbo.idmrunlog WHERE CAST(IdmRunEndTimeUTC as DATE) = CAST(CURRENT_TIMESTAMP AS DATE)"
+            query = ("SELECT COUNT(1) as cnt FROM dbo.idmrunlog "
+                     "WHERE CAST(IdmRunEndTimeUTC as DATE) = CAST(CURRENT_TIMESTAMP AS DATE)")
             print("STARTING QUERY EXECUTION")
             query_result = sql_server.execute_query(query=query)
             print("QUERY COMPLETED")
-            # if query_result[0][0] == 1:
-            if 1 == 1:
+            if query_result["cnt"] == 1:
                 print("AC available, calling my master to make something about it")
                 notifier = Notifier()
                 notifier.call()
