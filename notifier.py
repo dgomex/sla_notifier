@@ -18,11 +18,12 @@ class Notifier:
             url=self.url
         )
         for i in range(30):
-            if self.client.calls.get(sid=call.sid).fetch().status != "busy" and self.client.calls.get(sid=call.sid).fetch().status != "no-answer":
-                print(f"TENTATIVE {i+1} TO GET BUSY STATUS")
-                sleep(1)
-            else:
+            if self.client.calls.get(sid=call.sid).fetch().status == "busy" or self.client.calls.get(sid=call.sid).fetch().status == "no-answer":
                 print("CALL ANSWERED! EXITING CALL")
                 return call
+            else:
+                print(f"TENTATIVE {i + 1} TO GET BUSY STATUS")
+                sleep(1)
+
         print("WAITING TIME FOR CALL ANSWER FINISHED, RETRYING THE CALL")
         self.call()
