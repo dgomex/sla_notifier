@@ -1,4 +1,5 @@
 from os import environ
+from slack_sdk import WebClient
 from time import sleep
 from twilio.rest import Client
 
@@ -9,6 +10,8 @@ class Notifier:
         self.phone_number = "+17792329315"
         self.phone_to_call = environ.get("DESTINATION_PHONE_NUMBER", default="+351913558518")
         self.client = Client()
+        self.slack_web_client = WebClient(token=environ.get("SLACK_BOT_TOKEN"))
+        self.slack_user_monitor_id = environ.get("SLACK_MONITOR_USER_ID")
 
     def call(self):
         print("CREATING CALL")
@@ -27,3 +30,11 @@ class Notifier:
 
         print("WAITING TIME FOR CALL ANSWER FINISHED, RETRYING THE CALL")
         self.call()
+
+    def slack_message(self, violation_list: list):
+        if len(violation_list) > 0:
+            message = f"Hey bro the following jobs violated the SLA {violation_list}"
+        else:
+            message = "The monitor had an unknown problem, please open the ETL_MONITOR job on Jenkins to check."
+        self.slack_web_client.chat_postMessage(channel=self.slack_user_monitor_id, text=message)
+        print("Slack message sent")
