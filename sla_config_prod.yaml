@@ -344,9 +344,6 @@
     name: "spc_rawdata.modifiers"
     sla_time: "07:40"
 - Job:
-    name: "spc_rawdata.clients_segments"
-    sla_time: "07:40"
-- Job:
     name: "spc_rawdata.bill_schedule_kc"
     sla_time: "07:40"
 - Job:
@@ -681,9 +678,6 @@
     sla_time: "07:40"
 - Job:
     name: "spc_rawdata.kc"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.ac"
     sla_time: "07:40"
 - Job:
     name: "spc_rawdata.cta"
