@@ -8,54 +8,6 @@
     name: "spc_rawdata.trigger_ah"
     sla_time: "06:02"
 - Job:
-    name: "spc_rawdata.agency_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.agency_payers_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_ar_code_tag_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_denial_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_posting_adjustment_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_posting_payment_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_procedure_beta_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_tags_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.claim_transaction_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.fee_schedules_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.medicare_fee_schedule_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.patient_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.payment_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.all_claims_ac"
-    sla_time: "07:40"
-- Job:
-    name: "spc_rawdata.denial_remarks_ac"
-    sla_time: "07:40"
-- Job:
     name: "spc_rawdata.bill_schedule_ah"
     sla_time: "06:15"
 - Job:
@@ -764,10 +716,7 @@
     name: "rds_curated_data.stg_est_reimb_by_primary_payor"
     sla_time: "08:50"
 - Job:
-    name: "rds_curated_data.stg_pre_payments_ac"
-    sla_time: "07:45"
-- Job:
-    name: "rds_curated_data.stg_trip_credit_ac"
+    name: "rds_curated_data.stg_trip_credit_qb"
     sla_time: "07:50"
 - Job:
     name: "rds_curated_data.stg_trip_credit_rn"
@@ -907,3 +856,192 @@
 - Job:
     name: "spc_rawdata.files"
     sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.trigger_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.adjustmentcategories_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.adjustments_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencies_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencyadjustmentroles_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencyfeatures_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencypayerfeeschedules_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencypayers_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencypayersettings_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.agencyranking_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.ambulancefeeschedules_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.assistingproviders_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimdiagnosiscodes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimledger_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimpostingadjustments_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimpostingprocedures_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimpostingrejections_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimpostings_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimprocedures_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claims_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.insurancetypes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimstatuses_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.claimtags_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.countries_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.crewmemberpersonnels_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.diagnosiscodes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.eralineitemadjustments_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.eralineitemdates_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.eralineitemremarks_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.eralineitems_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facilities_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.facilitytypes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.feeschedulerates_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.feeschedules_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.genders_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.glossaries_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.hierarchycontrol_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.procedures_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.profitcenters_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.states_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.tags_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.timezones_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.transactiontypes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.procedurecategories_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.paymenttype_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payments_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoiceactions_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.paymentbatches_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payertypes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payers_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoicelog_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoicelogdetails_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoices_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoicestatuses_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.invoicestatushistory_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.medicarezipcodes_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.patientdemographics_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.patients_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payeraccesscontrol_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.payerclasses_qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.qb"
+    sla_time: "07:15"
+- Job:
+    name: "spc_rawdata.qb"
+    sla_time: "07:15"
+- Job:
+    name: "trigger_elasticubes_build"
+    sla_time: "09:15"
