@@ -1038,4 +1038,4 @@
     sla_time: "07:15"
 - Job:
     name: "trigger_elasticubes_build"
-    sla_time: "09:15"
+    sla_time: "09:50"
