@@ -1,4 +1,10 @@
 - Job:
+    name: "spc_rawdata.trigger_lfn"
+    sla_time: "06:02"
+- Job:
+    name: "spc_rawdata.lfn"
+    sla_time: "06:20"
+- Job:
     name: "spc_rawdata.trigger_dan"
     sla_time: "05:35"
 - Job:
