@@ -12,7 +12,8 @@ class Job:
                  jenkins_username=environ.get("JENKINS_USERNAME"),
                  jenkins_password=environ.get("JENKINS_PASSWORD")):
         self.name = name
-        self.sla_time = f"{datetime.date.today()} {sla_time}:00"
+        # SLA TIME = SLA TIME FROM FILE + SLA INCREASE FROM ENV VAR SLA_INCREASE
+        self.sla_time = str(datetime.datetime.strptime(f"{datetime.date.today()} {sla_time}:00", "%Y-%m-%d %H:%M:%S") + datetime.timedelta(minutes=int(os.getenv("SLA_INCREASE", 0))))
         self.server = jenkins.Jenkins(url=jenkins_host, username=jenkins_username, password=jenkins_password)
 
     def __str__(self):
@@ -47,6 +48,7 @@ class Job:
             started_epoch = build_info["timestamp"]
             started_timestamp = datetime.datetime.fromtimestamp(started_epoch / 1000).strftime("%Y-%m-%d %H:%M:%S")
             last_build_info = {"started_timestamp": started_timestamp, "build_status": build_info["result"]}
+            print(f"{self.name} - SLA set: {self.sla_time}")
             print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
         except Exception:
@@ -57,8 +59,7 @@ class Job:
     def is_sla_violated(self, last_build_info: dict):
         last_build_date = datetime.datetime.strptime(last_build_info["started_timestamp"],
                                                      "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d")
-        current_timestamp = datetime.datetime.now() + datetime.timedelta(minutes=int(os.getenv("SLA_INCREASE", 0)))
-        current_timestamp = current_timestamp.strftime("%Y-%m-%d %H:%M:%S")
+        current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         current_date = str(datetime.date.today())
         if current_timestamp > self.sla_time and (last_build_info["build_status"].upper() != "SUCCESS"
                                                   or last_build_date < current_date):
