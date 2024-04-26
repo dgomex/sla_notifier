@@ -1,3 +1,4 @@
+import os
 from os import environ
 
 import datetime
@@ -56,7 +57,8 @@ class Job:
     def is_sla_violated(self, last_build_info: dict):
         last_build_date = datetime.datetime.strptime(last_build_info["started_timestamp"],
                                                      "%Y-%m-%d %H:%M:%S").strftime("%Y-%m-%d")
-        current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        current_timestamp = datetime.datetime.now() + datetime.timedelta(minutes=int(os.getenv("SLA_INCREASE", 0)))
+        current_timestamp = current_timestamp.strftime("%Y-%m-%d %H:%M:%S")
         current_date = str(datetime.date.today())
         if current_timestamp > self.sla_time and (last_build_info["build_status"].upper() != "SUCCESS"
                                                   or last_build_date < current_date):
