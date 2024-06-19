@@ -5,7 +5,7 @@ from twilio.rest import Client
 
 class Notifier:
     def __init__(self):
-        self.url = "https://handler.twilio.com/twiml/ACfd818b5c8adfe2125bdaaff1167f2426"
+        self.url = f"https://handler.twilio.com/twiml/{environ.get('TWILIO_ACCOUNT_SID')}"
         self.phone_number = environ.get("SOURCE_PHONE_NUMBER", default="+17622364746")
         self.phone_to_call = environ.get("DESTINATION_PHONE_NUMBER", default="+351913558518")
         self.client = Client()
