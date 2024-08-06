@@ -1,14 +1,11 @@
 - Job:
-    name: "spc_rawdata.trigger_daily"
-    sla_time: "05:02"
-- Job:
     name: "spc_rawdata.trigger_ah"
     sla_time: "04:02"
 - Job:
     name: "spc_rawdata.trigger_dan"
     sla_time: "05:02"
 - Job:
-    name: "spc_rawdata.trigger_elasticubes_build"
+    name: "trigger_elasticubes_build"
     sla_time: "09:45"
 - Job:
     name: "spc_rawdata.ah"
