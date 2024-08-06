@@ -84,7 +84,7 @@
     sla_time: "06:15"
 - Job:
     name: "rds_curated_data.dim_patient"
-    sla_time: "05:71"
+    sla_time: "06:15"
 - Job:
     name: "rds_curated_data.dim_vehicle"
     sla_time: "06:15"
