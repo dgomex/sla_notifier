@@ -71,9 +71,6 @@
     name: "rds_curated_data.dim_vehicle"
     sla_time: "06:05"
 - Job:
-    name: "rds_curated_data.fact_trip_2"
-    sla_time: "06:05"
-- Job:
     name: "rds_curated_data.stg_trip_qb"
     sla_time: "06:05"
 - Job:
@@ -81,9 +78,6 @@
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.stg_user_ad"
-    sla_time: "06:05"
-- Job:
-    name: "rds_curated_data.build_status"
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.dim_modifier"
@@ -170,9 +164,6 @@
     name: "rds_curated_data.dim_source_system"
     sla_time: "06:05"
 - Job:
-    name: "rds_curated_data.stg_procedures_ac"
-    sla_time: "06:05"
-- Job:
     name: "rds_curated_data.dim_call_type_demo"
     sla_time: "06:05"
 - Job:
@@ -180,9 +171,6 @@
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.stg_pre_payment_qb"
-    sla_time: "06:05"
-- Job:
-    name: "rds_curated_data.stg_trip_credit_ac"
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.stg_trip_credit_qb"
@@ -195,9 +183,6 @@
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.stg_fee_schedule_qb"
-    sla_time: "06:05"
-- Job:
-    name: "rds_curated_data.stg_pre_payments_ac"
     sla_time: "06:05"
 - Job:
     name: "rds_curated_data.dim_billing_schedule"
@@ -254,9 +239,6 @@
     name: "rds_curated_data.stg_company_profit_center"
     sla_time: "06:05"
 - Job:
-    name: "rds_curated_data.company_profit_center_check"
-    sla_time: "06:05"
-- Job:
     name: "rds_curated_data.dim_estimated_reimbursement"
     sla_time: "06:05"
 - Job:
@@ -293,9 +275,6 @@
     name: "rds_aggregated_data.agg_trip_cpaag"
     sla_time: "06:05"
 - Job:
-    name: "rds_aggregated_data.agg_trip_cppag"
-    sla_time: "06:05"
-- Job:
     name: "rds_aggregated_data.agg_trip_rpaag"
     sla_time: "06:05"
 - Job:
@@ -309,16 +288,4 @@
     sla_time: "06:05"
 - Job:
     name: "rds_aggregated_data.agg_trip_denial"
-    sla_time: "06:05"
-- Job:
-    name: "rds_aggregated_data.cash_performance"
-    sla_time: "06:05"
-- Job:
-    name: "rds_aggregated_data.payments_by_payor"
-    sla_time: "06:05"
-- Job:
-    name: "rds_aggregated_data.agg_trip_rpaag_final"
-    sla_time: "06:05"
-- Job:
-    name: "rds_aggregated_data.agg_trip_credit_cpaag"
     sla_time: "06:05"
