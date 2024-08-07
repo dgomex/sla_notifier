@@ -1,30 +1,30 @@
 - Job:
     name: "spc_rawdata.trigger_ah"
-    sla_time: "05:02"
+    sla_time: "04:02"
 - Job:
     name: "spc_rawdata.trigger_dan"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_cta"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_files"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_kc"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_lfn"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_pit"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "spc_rawdata.trigger_qb"
-    sla_time: "06:02"
+    sla_time: "05:02"
 - Job:
     name: "trigger_elasticubes_build"
-    sla_time: "09:45"
+    sla_time: "09:35"
 - Job:
     name: "spc_rawdata.ah"
     sla_time: "04:40"
@@ -45,13 +45,13 @@
     sla_time: "05:40"
 - Job:
     name: "spc_rawdata.pit"
-    sla_time: "06:25"
+    sla_time: "06:05"
 - Job:
     name: "spc_rawdata.qb"
     sla_time: "05:50"
 - Job:
     name: "error_handler.truncate"
-    sla_time: "07:05"
+    sla_time: "06:10"
 - Job:
     name: "rds_curated_data.dim_ytd"
     sla_time: "06:55"
@@ -288,28 +288,28 @@
     sla_time: "08:17"
 - Job:
     name: "rds_aggregated_data.agg_trip"
-    sla_time: "09:23"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_cpaag"
-    sla_time: "09:23"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_rpaag"
-    sla_time: "09:23"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_action"
-    sla_time: "09:24"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_charge"
-    sla_time: "09:23"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_credit"
-    sla_time: "09:24"
+    sla_time: "08:30"
 - Job:
     name: "rds_aggregated_data.agg_trip_denial"
-    sla_time: "09:24"
+    sla_time: "08:30"
 - Job:
     name: "rds_curated_data.log_etl_build"
-    sla_time: "09:34"
+    sla_time: "08:34"
 - Job:
     name: "rds_curated_data.log_etl_build_history"
-    sla_time: "11:40"
+    sla_time: "10:40"
