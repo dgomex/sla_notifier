@@ -300,13 +300,13 @@
     sla_time: "09:43"
 - Job:
     name: "rds_aggregated_data.agg_trip_credit"
-    sla_time: "09:43"
+    sla_time: "10:05"
 - Job:
     name: "rds_aggregated_data.agg_trip_denial"
     sla_time: "09:43"
 - Job:
     name: "rds_curated_data.log_etl_build"
-    sla_time: "09:45"
+    sla_time: "10:08"
 - Job:
     name: "rds_curated_data.log_etl_build_history"
     sla_time: "11:40"
