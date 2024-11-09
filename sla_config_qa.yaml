@@ -1,6 +1,6 @@
 - Job:
     name: "spc_rawdata.trigger_ah"
-    sla_time: "05:02"
+    sla_time: "06:02"
 - Job:
     name: "spc_rawdata.trigger_dan"
     sla_time: "06:02"
@@ -24,7 +24,7 @@
     sla_time: "06:02"
 - Job:
     name: "spc_rawdata.ah"
-    sla_time: "05:25"
+    sla_time: "06:25"
 - Job:
     name: "spc_rawdata.cta"
     sla_time: "06:25"
