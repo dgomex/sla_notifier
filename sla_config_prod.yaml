@@ -24,10 +24,10 @@
     sla_time: "05:02"
 - Job:
     name: "trigger_elasticubes_build"
-    sla_time: "09:35"
+    sla_time: "09:50"
 - Job:
     name: "spc_rawdata.ah"
-    sla_time: "05:40"
+    sla_time: "06:20"
 - Job:
     name: "spc_rawdata.cta"
     sla_time: "05:50"
@@ -51,7 +51,7 @@
     sla_time: "05:50"
 - Job:
     name: "error_handler.truncate"
-    sla_time: "06:10"
+    sla_time: "06:26"
 - Job:
     name: "rds_curated_data.dim_ytd"
     sla_time: "06:55"
@@ -114,7 +114,7 @@
     sla_time: "08:12"
 - Job:
     name: "rds_curated_data.log_etl_build"
-    sla_time: "09:16"
+    sla_time: "09:13"
 - Job:
     name: "rds_curated_data.stg_agency_qb"
     sla_time: "06:55"
@@ -225,7 +225,7 @@
     sla_time: "08:15"
 - Job:
     name: "rds_curated_data.log_etl_build_history"
-    sla_time: "11:25"
+    sla_time: "11:40"
 - Job:
     name: "rds_curated_data.stg_claim_invoices_qb"
     sla_time: "06:55"
@@ -252,7 +252,7 @@
     sla_time: "06:55"
 - Job:
     name: "rds_curated_data.log_action_user_exception"
-    sla_time: "07:55"
+    sla_time: "08:08"
 - Job:
     name: "rds_curated_data.stg_company_profit_center"
     sla_time: "06:55"
@@ -288,28 +288,22 @@
     sla_time: "08:17"
 - Job:
     name: "rds_aggregated_data.agg_trip"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_cpaag"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_rpaag"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_action"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_charge"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_credit"
-    sla_time: "08:30"
+    sla_time: "08:45"
 - Job:
     name: "rds_aggregated_data.agg_trip_denial"
-    sla_time: "08:30"
-- Job:
-    name: "rds_curated_data.log_etl_build"
-    sla_time: "08:34"
-- Job:
-    name: "rds_curated_data.log_etl_build_history"
-    sla_time: "10:40"
+    sla_time: "08:45"
