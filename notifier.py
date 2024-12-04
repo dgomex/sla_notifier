@@ -11,7 +11,7 @@ class Notifier:
         self.phone_to_call = environ.get("DESTINATION_PHONE_NUMBER", default="+351913558518")
         self.twilio_client = Client()
         self.slack_web_client = WebClient(token=environ.get("SLACK_BOT_TOKEN"))
-        self.slack_user_monitor_id = environ.get("SLACK_MONITOR_USER_ID")
+        self.slack_channel_id = environ.get("SLACK_CHANNEL_ID")
 
     def call(self):
         print("CREATING CALL")
@@ -33,9 +33,10 @@ class Notifier:
 
     def slack_message(self, violation_list: list):
         if len(violation_list) > 0:
-            message = f"Hey bro the following jobs violated the SLA: {violation_list}"
+            message = f"The following jobs violaed SLA in the env {environ.get('APP_ENV')}: {violation_list}"
         else:
-            message = "The monitor had an unknown problem, please open the ETL_MONITOR job on Jenkins to check."
+            message = (f"The monitor had an unknown problem in the env {environ.get('APP_ENV')}, "
+                       "please open the ETL_MONITOR job on Jenkins to check.")
         self.slack_web_client.chat_postMessage(channel=self.slack_user_monitor_id, text=message)
         print("Slack message sent")
 
