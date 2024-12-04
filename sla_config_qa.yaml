@@ -310,6 +310,3 @@
 - Job:
     name: "rds_curated_data.log_etl_build_history"
     sla_time: "11:40"
-- Job:
-    name: "admin.set_etl_connections_properties"
-    sla_time: "00:40"
