@@ -36,7 +36,7 @@ class Notifier:
             message = f"The following jobs violaed SLA in the env {environ.get('APP_ENV')}: {violation_list}"
         else:
             message = (f"The monitor had an unknown problem in the env {environ.get('APP_ENV')}, "
-                       "please open the ETL_MONITOR job on Jenkins to check.")
+                       "please access Hanger and Jenkins to verify.")
         self.slack_web_client.chat_postMessage(channel=self.slack_channel_id, text=message)
         print("Slack message sent")
 
