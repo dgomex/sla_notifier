@@ -1,13 +1,13 @@
 from job import Job
 from notifier import Notifier
 from os import getenv
-from time import sleep
 
 import datetime
 
 # ENV VARS NEEDED: JENKINS_HOST, JENKINS_USERNAME, JENKINS_PASSWORD, MONITOR_START_HOUR, VERIFICATION_END_HOUR,
-# CHECK_INTERVAL, SLA_CONFIG_PATH, SLA_INCREASE, TWILIO_SID, TWILIO_AUTH_TOKEN
-
+# CHECK_INTERVAL, SLA_CONFIG_PATH, SLA_INCREASE, TWILIO_SID, TWILIO_AUTH_TOKEN,
+# SLACK_BOT_TOKEN, SLACK_MONITOR_USER_ID, DESTINATION_PHONE_NUMBER, NOTIFICATION_METHOD
+# APP_ENV
 
 def main():
     monitor_start_hour = int(getenv("MONITOR_START_HOUR", default=0))
@@ -29,14 +29,12 @@ def main():
             if qty_sla_violated > 0:
                 print(f"SLA violated quantity {qty_sla_violated}, calling pager")
                 print(violation_list)
-                notifier = Notifier()
-                notifier.call()
+                Notifier.notify(violation_list=violation_list)
 
             # sleep(check_interval)
         except Exception:
-            print("The python code is broken, calling to check")
-            notifier = Notifier()
-            notifier.call()
+            print("The python code is broken, notifying to check")
+            Notifier.notify()
             # sleep(check_interval)
     else:
         print(f"The hour is not between {monitor_start_hour} and {monitor_end_hour}, waiting the next validation "
