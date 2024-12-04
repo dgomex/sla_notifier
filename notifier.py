@@ -47,5 +47,5 @@ class Notifier:
         notification_method = environ.get("NOTIFICATION_METHOD", default="call").lower()
         if notification_method.find("call") >= 0:
             notifier.call()
-        elif notification_method.find("slack") >= 0:
+        if notification_method.find("slack") >= 0:
             notifier.slack_message(violation_list=violation_list)
