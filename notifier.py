@@ -6,8 +6,8 @@ from twilio.rest import Client
 
 class Notifier:
     def __init__(self):
-        self.url = "https://handler.twilio.com/twiml/EH3ab3f9548b34cca8c5f6f2c5bc26f5d9"
-        self.phone_number = "+17792329315"
+        self.url = f"https://handler.twilio.com/twiml/{environ.get('TWILIO_ACCOUNT_SID')}"
+        self.phone_number = environ.get("SOURCE_PHONE_NUMBER", default="+17622364746")
         self.phone_to_call = environ.get("DESTINATION_PHONE_NUMBER", default="+351913558518")
         self.twilio_client = Client()
         self.slack_web_client = WebClient(token=environ.get("SLACK_BOT_TOKEN"))

@@ -1,3 +1,4 @@
+import os
 from os import environ
 
 import datetime
@@ -11,7 +12,8 @@ class Job:
                  jenkins_username=environ.get("JENKINS_USERNAME"),
                  jenkins_password=environ.get("JENKINS_PASSWORD")):
         self.name = name
-        self.sla_time = f"{datetime.date.today()} {sla_time}:00"
+        # SLA TIME = SLA TIME FROM FILE + SLA INCREASE FROM ENV VAR SLA_INCREASE
+        self.sla_time = str(datetime.datetime.strptime(f"{datetime.date.today()} {sla_time}:00", "%Y-%m-%d %H:%M:%S") + datetime.timedelta(minutes=int(os.getenv("SLA_INCREASE", 0))))
         self.server = jenkins.Jenkins(url=jenkins_host, username=jenkins_username, password=jenkins_password)
 
     def __str__(self):
@@ -46,6 +48,7 @@ class Job:
             started_epoch = build_info["timestamp"]
             started_timestamp = datetime.datetime.fromtimestamp(started_epoch / 1000).strftime("%Y-%m-%d %H:%M:%S")
             last_build_info = {"started_timestamp": started_timestamp, "build_status": build_info["result"]}
+            print(f"{self.name} - SLA set: {self.sla_time}")
             print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
         except Exception:
