@@ -32,10 +32,14 @@ class Notifier:
         self.call()
 
     def slack_message(self, violation_list: list):
+        print("Creting slack message")
         if len(violation_list) > 0:
+            print("Setting message fix part")
             message = f"The following jobs violated SLA in the {environ.get('APP_ENV')} env: \n"
+            print("Appending violation")
             for violated_job in violation_list:
                 message = f"{message} {violated_job.name} \n"
+            print(message)
         else:
             message = (f"The monitor had an unknown problem in the {environ.get('APP_ENV')} env, "
                        "please access Hanger and Jenkins to verify.")
