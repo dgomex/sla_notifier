@@ -4,6 +4,7 @@ from os import getenv
 
 import datetime
 
+
 # ENV VARS NEEDED: JENKINS_HOST, JENKINS_USERNAME, JENKINS_PASSWORD, MONITOR_START_HOUR, VERIFICATION_END_HOUR,
 # CHECK_INTERVAL, SLA_CONFIG_PATH, SLA_INCREASE, TWILIO_SID, TWILIO_AUTH_TOKEN,
 # SLACK_BOT_TOKEN, SLACK_MONITOR_USER_ID, DESTINATION_PHONE_NUMBER, NOTIFICATION_METHOD
@@ -25,9 +26,7 @@ def main():
                 last_build_info = job.get_job_last_build_info()
                 if job.is_sla_violated(last_build_info=last_build_info):
                     qty_sla_violated = qty_sla_violated + 1
-                    violation_list.append(Job(name=job.name,
-                                              status=last_build_info["build_status"].upper(),
-                                              sla_time=job.sla_time))
+                    violation_list.append(job.name)
 
             if qty_sla_violated > 0:
                 print(f"SLA violated quantity {qty_sla_violated}, calling pager")
