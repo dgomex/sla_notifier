@@ -11,17 +11,17 @@ class Job:
                  jenkins_host=environ.get("JENKINS_HOST"),
                  jenkins_username=environ.get("JENKINS_USERNAME"),
                  jenkins_password=environ.get("JENKINS_PASSWORD"),
-                 status: str = "Unknown"):
+                 is_job_running: str = False):
         self.name = name
         # SLA TIME = SLA TIME FROM FILE + SLA INCREASE FROM ENV VAR SLA_INCREASE
         self.sla_time = str(datetime.datetime.strptime(f"{datetime.date.today()} {sla_time}:00",
                                                        "%Y-%m-%d %H:%M:%S") + datetime.timedelta(
             minutes=int(os.getenv("SLA_INCREASE", 0))))
         self.server = jenkins.Jenkins(url=jenkins_host, username=jenkins_username, password=jenkins_password)
-        self.status = status
+        self.is_job_running = is_job_running
 
     def __str__(self):
-        return f"Job name={self.name}, status={self.status}, SLA={self.sla_time}"
+        return f"Job name={self.name}, is_job_running={self.is_job_running}, SLA={self.sla_time}"
 
     @classmethod
     def read_from_yaml(cls, file_path=environ.get("SLA_CONFIG_PATH")):
@@ -47,20 +47,17 @@ class Job:
 
     def get_job_last_build_info(self):
         try:
-            job_info = self.server.get_job_info(self.name)
-            last_build_number = job_info['lastBuild']['number']
-            print(self.server.get_build_info(self.name, last_build_number))
             last_build_number = self.server.get_job_info(self.name)["lastCompletedBuild"]["number"]
             build_info = self.server.get_build_info(self.name, last_build_number)
             started_epoch = build_info["timestamp"]
             started_timestamp = datetime.datetime.fromtimestamp(started_epoch / 1000).strftime("%Y-%m-%d %H:%M:%S")
             last_build_info = {"started_timestamp": started_timestamp, "build_status": build_info["result"]}
-            #print(f"{self.name} - SLA set: {self.sla_time}")
-            #print(f"{self.name} - Last build info: {last_build_info}")
+            print(f"{self.name} - SLA set: {self.sla_time}")
+            print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
         except Exception:
             last_build_info = {"started_timestamp": "2023-01-01 14:59:35", "build_status": "JOB NOT FOUND"}
-            #print(f"{self.name} - Last build info: {last_build_info}")
+            print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
 
     def is_sla_violated(self, last_build_info: dict):
@@ -73,3 +70,8 @@ class Job:
             return True
         else:
             return False
+
+    def is_job_running(self):
+        job_info = self.server.get_job_info(self.name)
+        last_build_number = job_info['lastBuild']['number']
+        return True if self.server.get_build_info(self.name, last_build_number)["building"] else False
