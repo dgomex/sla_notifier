@@ -28,7 +28,7 @@ def main():
                     qty_sla_violated = qty_sla_violated + 1
                     violation_list.append(Job(name=job.name,
                                               sla_time=job.sla_time[11:16],
-                                              is_job_running=job.is_job_running()))
+                                              is_building=job.is_job_running()))
 
             if qty_sla_violated > 0:
                 print(f"SLA violated quantity {qty_sla_violated}, calling pager")
