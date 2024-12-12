@@ -55,12 +55,12 @@ class Job:
             started_epoch = build_info["timestamp"]
             started_timestamp = datetime.datetime.fromtimestamp(started_epoch / 1000).strftime("%Y-%m-%d %H:%M:%S")
             last_build_info = {"started_timestamp": started_timestamp, "build_status": build_info["result"]}
-            print(f"{self.name} - SLA set: {self.sla_time}")
-            print(f"{self.name} - Last build info: {last_build_info}")
+            #print(f"{self.name} - SLA set: {self.sla_time}")
+            #print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
         except Exception:
             last_build_info = {"started_timestamp": "2023-01-01 14:59:35", "build_status": "JOB NOT FOUND"}
-            print(f"{self.name} - Last build info: {last_build_info}")
+            #print(f"{self.name} - Last build info: {last_build_info}")
             return last_build_info
 
     def is_sla_violated(self, last_build_info: dict):
