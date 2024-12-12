@@ -47,6 +47,7 @@ class Job:
 
     def get_job_last_build_info(self):
         try:
+            print(self.server.get_job_info(self.name))
             last_build_number = self.server.get_job_info(self.name)["lastCompletedBuild"]["number"]
             build_info = self.server.get_build_info(self.name, last_build_number)
             started_epoch = build_info["timestamp"]

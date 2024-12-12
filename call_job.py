@@ -1,9 +1,6 @@
-from os import environ
+from job import Job
 
-import jenkins
+jobs = Job.read_from_yaml()
 
-jenkins_server = jenkins.Jenkins(url=environ.get("JENKINS_HOST"),
-                                 username=environ.get("JENKINS_USERNAME"),
-                                 password=environ.get("JENKINS_PASSWORD"))
-
-jenkins_server.build_job(name="remote_test")
+for job in jobs:
+    job.get_job_last_build_info()
