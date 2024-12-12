@@ -51,4 +51,5 @@ class Notifier:
         if notification_method.find("call") >= 0:
             notifier.call()
         if notification_method.find("slack") >= 0:
+            print("Creating slack message")
             notifier.slack_message(violation_list=violation_list)
