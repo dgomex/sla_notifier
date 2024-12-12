@@ -11,17 +11,21 @@ class Job:
                  jenkins_host=environ.get("JENKINS_HOST"),
                  jenkins_username=environ.get("JENKINS_USERNAME"),
                  jenkins_password=environ.get("JENKINS_PASSWORD"),
-                 status: str = "Unknown"):
+                 is_building: str = False):
         self.name = name
         # SLA TIME = SLA TIME FROM FILE + SLA INCREASE FROM ENV VAR SLA_INCREASE
         self.sla_time = str(datetime.datetime.strptime(f"{datetime.date.today()} {sla_time}:00",
                                                        "%Y-%m-%d %H:%M:%S") + datetime.timedelta(
             minutes=int(os.getenv("SLA_INCREASE", 0))))
         self.server = jenkins.Jenkins(url=jenkins_host, username=jenkins_username, password=jenkins_password)
-        self.status = status
+
+        # Get current build flag
+        job_info = self.server.get_job_info(self.name)
+        last_build_number = job_info['lastBuild']['number']
+        self.is_building = True if self.server.get_build_info(self.name, last_build_number)["building"] else False
 
     def __str__(self):
-        return f"Job name={self.name}, status={self.status}, SLA={self.sla_time}"
+        return f"Job name={self.name}, is_building={self.is_building}, SLA={self.sla_time}"
 
     @classmethod
     def read_from_yaml(cls, file_path=environ.get("SLA_CONFIG_PATH")):
