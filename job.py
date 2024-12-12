@@ -25,7 +25,7 @@ class Job:
         self.is_building = True if self.server.get_build_info(self.name, last_build_number)["building"] else False
 
     def __str__(self):
-        return f"Job name={self.name}, is_job_running={self.is_job_running}, SLA={self.sla_time}"
+        return f"Job name={self.name}, is_building={self.is_building}, SLA={self.sla_time}"
 
     @classmethod
     def read_from_yaml(cls, file_path=environ.get("SLA_CONFIG_PATH")):
