@@ -18,7 +18,11 @@ class Job:
                                                        "%Y-%m-%d %H:%M:%S") + datetime.timedelta(
             minutes=int(os.getenv("SLA_INCREASE", 0))))
         self.server = jenkins.Jenkins(url=jenkins_host, username=jenkins_username, password=jenkins_password)
-        self.is_building = is_building
+
+        # Get current build flag
+        job_info = self.server.get_job_info(self.name)
+        last_build_number = job_info['lastBuild']['number']
+        self.is_building = True if self.server.get_build_info(self.name, last_build_number)["building"] else False
 
     def __str__(self):
         return f"Job name={self.name}, is_job_running={self.is_job_running}, SLA={self.sla_time}"
@@ -70,8 +74,3 @@ class Job:
             return True
         else:
             return False
-
-    def is_job_running(self):
-        job_info = self.server.get_job_info(self.name)
-        last_build_number = job_info['lastBuild']['number']
-        return True if self.server.get_build_info(self.name, last_build_number)["building"] else False
