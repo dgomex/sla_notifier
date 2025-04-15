@@ -2,6 +2,9 @@
     name: "spc_rawdata.trigger_ah"
     sla_time: "06:02"
 - Job:
+    name: "spc_rawdata.trigger_car"
+    sla_time: "06:02"
+- Job:
     name: "spc_rawdata.trigger_dan"
     sla_time: "06:02"
 - Job:
@@ -25,6 +28,9 @@
 - Job:
     name: "spc_rawdata.ah"
     sla_time: "06:25"
+- Job:
+    name: "spc_rawdata.car"
+    sla_time: "06:30"
 - Job:
     name: "spc_rawdata.cta"
     sla_time: "06:25"
@@ -109,9 +115,6 @@
 - Job:
     name: "rds_curated_data.dim_trip_demo"
     sla_time: "09:15"
-- Job:
-    name: "rds_curated_data.log_etl_build"
-    sla_time: "10:16"
 - Job:
     name: "rds_curated_data.stg_agency_qb"
     sla_time: "07:41"
@@ -284,6 +287,60 @@
     name: "rds_curated_data.stg_est_reimb_by_company_and_payor_level_two"
     sla_time: "09:21"
 - Job:
+    name: "rds_curated_data.bridge_custom_company_charge"
+    sla_time: "07:35"
+- Job:
+    name: "rds_curated_data.bridge_custom_company_credit"
+    sla_time: "07:35"
+- Job:
+    name: "rds_curated_data.bridge_patient_insurance"
+    sla_time: "07:40"
+- Job:
+    name: "rds_curated_data.dim_invoice_action"
+    sla_time: "07:15"
+- Job:
+    name: "rds_curated_data.dim_invoice_status"
+    sla_time: "07:15"
+- Job:
+    name: "rds_curated_data.dim_issue_reason"
+    sla_time: "07:15"
+- Job:
+    name: "rds_curated_data.dim_issue_status"
+    sla_time: "07:15"
+- Job:
+    name: "rds_curated_data.dim_jobs_hanger"
+    sla_time: "10:55"
+- Job:
+    name: "rds_curated_data.dim_tag"
+    sla_time: "07:15"
+- Job:
+    name: "rds_curated_data.fact_jobs_builds_hanger"
+    sla_time: "10:55"
+- Job:
+    name: "rds_curated_data.fact_trip_action_demo"
+    sla_time: "09:30"
+- Job:
+    name: "rds_curated_data.fact_trip_bto"
+    sla_time: "08:25"
+- Job:
+    name: "rds_curated_data.fact_trip_bto_demo"
+    sla_time: "09:25"
+- Job:
+    name: "rds_curated_data.fact_trip_invoice"
+    sla_time: "08:25"
+- Job:
+    name: "rds_curated_data.fact_trip_invoice_demo"
+    sla_time: "09:25"
+- Job:
+    name: "rds_curated_data.log_notification_exception"
+    sla_time: "10:25"
+- Job:
+    name: "rds_curated_data.stg_claim_tags_qb"
+    sla_time: "07:35"
+- Job:
+    name: "rds_curated_data.stg_trip_action"
+    sla_time: "09:30"
+- Job:
     name: "rds_aggregated_data.agg_trip"
     sla_time: "09:42"
 - Job:
@@ -305,8 +362,14 @@
     name: "rds_aggregated_data.agg_trip_denial"
     sla_time: "09:43"
 - Job:
+    name: "rds_aggregated_data.agg_trip_bto"
+    sla_time: "10:05"
+- Job:
+    name: "rds_aggregated_data.agg_trip_charge_detail"
+    sla_time: "10:05"
+- Job:
+    name: "rds_aggregated_data.agg_trip_core_performance"
+    sla_time: "10:05"
+- Job:
     name: "rds_curated_data.log_etl_build"
     sla_time: "10:08"
-- Job:
-    name: "rds_curated_data.log_etl_build_history"
-    sla_time: "11:40"
