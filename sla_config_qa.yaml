@@ -44,9 +44,6 @@
     name: "spc_rawdata.kc"
     sla_time: "06:40"
 - Job:
-    name: "spc_rawdata.lfn"
-    sla_time: "06:35"
-- Job:
     name: "spc_rawdata.pit"
     sla_time: "07:19"
 - Job:
