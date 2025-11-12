@@ -222,7 +222,7 @@
     sla_time: "09:33"
 - Job:
     name: "rds_curated_data.log_etl_build_history"
-    sla_time: "11:40"
+    sla_time: "13:01"
 - Job:
     name: "rds_curated_data.stg_claim_invoices_qb"
     sla_time: "08:10"
