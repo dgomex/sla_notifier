@@ -114,7 +114,7 @@
     sla_time: "08:47"
 - Job:
     name: "rds_curated_data.log_etl_build"
-    sla_time: "09:45"
+    sla_time: "10:05"
 - Job:
     name: "rds_curated_data.stg_agency_qb"
     sla_time: "07:30"
@@ -288,34 +288,34 @@
     sla_time: "08:52"
 - Job:
     name: "rds_aggregated_data.agg_trip"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_cpaag"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_rpaag"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_action"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_charge"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_credit"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_denial"
-    sla_time: "09:30"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_bto"
-    sla_time: "08:45"
+    sla_time: "09:25"
 - Job:
     name: "rds_aggregated_data.agg_trip_charge_detail"
-    sla_time: "09:40"
+    sla_time: "09:59"
 - Job:
     name: "rds_aggregated_data.agg_trip_core_performance"
-    sla_time: "09:10"
+    sla_time: "09:45"
 - Job:
     name: "rds_curated_data.bridge_custom_company_charge"
     sla_time: "06:30"
@@ -360,7 +360,7 @@
     sla_time: "08:15"
 - Job:
     name: "rds_curated_data.log_notification_exception"
-    sla_time: "09:00"
+    sla_time: "09:40"
 - Job:
     name: "rds_curated_data.stg_trip_action"
     sla_time: "07:50"
