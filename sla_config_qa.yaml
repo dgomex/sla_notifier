@@ -330,7 +330,7 @@
     sla_time: "09:40"
 - Job:
     name: "rds_curated_data.log_notification_exception"
-    sla_time: "10:40"
+    sla_time: "11:10"
 - Job:
     name: "rds_curated_data.stg_claim_tags_qb"
     sla_time: "07:50"
@@ -369,4 +369,4 @@
     sla_time: "11:05"
 - Job:
     name: "rds_curated_data.log_etl_build"
-    sla_time: "11:10"
+    sla_time: "11:20"
