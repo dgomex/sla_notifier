@@ -23,9 +23,6 @@
     name: "spc_rawdata.trigger_qb"
     sla_time: "05:02"
 - Job:
-    name: "trigger_elasticubes_build"
-    sla_time: "10:20"
-- Job:
     name: "spc_rawdata.ah"
     sla_time: "06:50"
 - Job:
